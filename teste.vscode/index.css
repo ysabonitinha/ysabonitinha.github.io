@@ -1,0 +1,49 @@
+body {
+    background-color: #e0f5ff; /* azul claro */
+    margin: 20px; /* margem para o site */
+}
+
+.container {
+    background-color: #b3e0ff; /* azul bebê */
+    padding: 20px; /* espaço interno */
+    border-radius: 10px; /* bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra */
+}
+
+h1 {
+    color: #ffffff; /* texto branco */
+    background-color: #4d94ff; /* azul */
+    padding: 10px 20px; /* espaço interno */
+    border-radius: 5px; /* bordas arredondadas */
+    text-align: center; /* centralizar texto */
+}
+
+.circle-button {
+    width: 100px; /* Definindo largura */
+    height: 100px; /* Definindo altura */
+    border-radius: 50%; /* Tornando o botão redondo */
+    background-color: #4d94ff; /* Azul */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Removendo borda */
+    cursor: pointer; /* Cursor ao passar */
+    outline: none; /* Removendo contorno ao focar */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh); /* Começa fora da tela no topo */
+    }
+    100% {
+        transform: translateY(100vh); /* Desce até a parte de baixo da tela */
+    }
+}
+
+.confetti-piece {
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00; /* Amarelo */
+    position: absolute;
+    animation: fall 5s linear infinite; /* Animação de queda */
+    transform: rotate(45deg); /* Roda a peça de confete */
+}
